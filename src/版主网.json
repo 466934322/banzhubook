@@ -1,0 +1,31 @@
+{
+  "name": "版主网",
+  "version": 100,
+  "category": 1,
+  "url": "https://m.banzhuer.com",
+  "charset": "gbk",
+  "metadata": {
+    "name":["a:nth-child(2)"],
+    "author":["a:nth-child(3)"],
+    "category":["a:first-child"],
+    "status":[],
+    "update":[],
+    "lastChapter":[],
+    "link":["a:nth-child(2)[href]"],
+    "catalog":[".gengduo>a[href]"],
+  },
+  "catalog":{
+    "list":"ul.lb.fk>li",
+    "chapter":{
+        "name":"ul.lb.fk>li>a",
+        "link":"ul.lb.fk>li>a[href]",
+    },
+    "content":{
+        "text":"article#id",
+    }
+  },
+  "search": {
+    "link": "https://m.banzhuer.com@post->submit=&type=articlename&s=${key}",
+    "list": "ul.fk>li"
+  }
+}
